@@ -66,14 +66,13 @@ const Reviews = () => {
               <ul className="space-y-12 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:gap-x-8">
                 {customerReviews.map((review) => (
                   <li key={uuidv4()}>
-                    <div className="flex items-center space-x-4 lg:space-x-6">
-                      <div className=" h-full">
-                        <img
-                          className="rounded-full object-cover"
-                          src={review.image.sourceUrl}
-                          alt={review.image.altText}
-                        />
-                      </div>
+                    <div className="flex space-x-4 lg:space-x-6">
+                      <img
+                        className="flex-shrink-0 h-12 w-12"
+                        src={review.image.sourceUrl}
+                        alt={review.image.altText}
+                      />
+
                       <div className="font-medium text-lg leading-6 space-y-1">
                         <h3 className="text-black font-bold">{review.name}</h3>
                         <div className="text-red-600 flex items-center">
