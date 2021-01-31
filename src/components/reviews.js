@@ -36,13 +36,7 @@ const Reviews = () => {
               date
               image {
                 altText
-                localFile {
-                  childImageSharp {
-                    fixed(height: 100, width: 100) {
-                      ...GatsbyImageSharpFixed
-                    }
-                  }
-                }
+                sourceUrl
               }
             }
           }
@@ -74,9 +68,9 @@ const Reviews = () => {
                   <li key={uuidv4()}>
                     <div className="flex items-center space-x-4 lg:space-x-6">
                       <div className=" h-full">
-                        <Img
+                        <img
                           className="rounded-full object-cover"
-                          fixed={review.image.localFile.childImageSharp.fixed}
+                          src={review.image.sourceUrl}
                           alt={review.image.altText}
                         />
                       </div>
