@@ -63,9 +63,9 @@ function IndexPage() {
       <Layout>
         <Hero />
         <CarTint />
+        <Services />
         <Products />
         <Pricing />
-        <Services />
         <Reviews />
         <Contact />
         <About />
