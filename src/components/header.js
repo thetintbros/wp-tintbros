@@ -215,7 +215,7 @@ const Header = () => {
             {items.map((i) => (
               <LinkScroll
                 key={uuidv4()}
-                onClick={handleScroll}
+                onClick={handleToggle}
                 activeClass="active"
                 to={i.item}
                 spy
