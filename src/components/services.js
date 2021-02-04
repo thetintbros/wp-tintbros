@@ -47,7 +47,7 @@ const Services = () => {
   const { headlightTinting, vinylWrap } = data.wpPage.sections.moreServices;
   return (
     <>
-      <section className="bg-gray-900 mx-auto mb-12">
+      <section className="mx-auto mb-12">
         <div className=" max-w-5xl mx-auto grid md:grid-cols-2 md:px-6 lg:px-8">
           {/* container 1 */}
           <div className="bg-gray-900 rounded-lg md:flex md:flex-col m-4 p-8 md:ml-4 shadow-2xl">
