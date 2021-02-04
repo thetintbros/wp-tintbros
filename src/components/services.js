@@ -83,11 +83,11 @@ const Services = () => {
               />
             </div>
             <div className="flex items-baseline pt-4">
-              <h1 className="text-xl md:text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-white">
                 {vinylWrap.title}
               </h1>
-              <span className="text-xl md:text-2xl ml-2  text-white">-</span>
-              <p className="text-xl md:text-2xl ml-2 text-red-600 font-semibold">
+              <span className="text-2xll ml-2  text-white">-</span>
+              <p className="text-2xl ml-2 text-red-600 font-semibold">
                 {vinylWrap.price}
               </p>
             </div>
