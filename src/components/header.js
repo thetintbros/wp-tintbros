@@ -1,9 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link as LinkScroll } from 'react-scroll';
 import { graphql, useStaticQuery } from 'gatsby';
 import { v4 as uuidv4 } from 'uuid';
-
 import boxLogo from '../images/box-logo.svg';
+
+// Took hook from this video
+// https://www.youtube.com/watch?v=eWO1b6EoCnQ&ab_channel=RyanToronto
+const useClickOutside = (handler) => {
+  const domNode = useRef();
+
+  useEffect(() => {
+    const maybeHandler = (event) => {
+      if (!domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+    document.addEventListener('mousedown', maybeHandler);
+
+    return () => {
+      document.removeEventListener('mousedown', maybeHandler);
+    };
+  });
+  return domNode;
+};
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -33,6 +52,10 @@ const Header = () => {
       document.removeEventListener('scroll');
     };
   }, []);
+
+  const menuNode = useClickOutside(() => {
+    setActive(false);
+  });
 
   const data = useStaticQuery(graphql`
     query {
@@ -208,6 +231,7 @@ const Header = () => {
       Menu open: "block", Menu closed: "hidden"
       --> */}
         <div
+          ref={menuNode}
           className={`${active ? 'block' : 'hidden'} mobile-menu  md:hidden `}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
