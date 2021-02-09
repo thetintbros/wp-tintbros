@@ -21,7 +21,7 @@ const FAQ = () => {
       }
     }
   `);
-  const { to, title, questions } = data.wpPage.sections.faq;
+  const { to, title, questions } = data.wpPage.sections?.faq;
   return (
     <section id={to}>
       <div className="bg-gray-50">

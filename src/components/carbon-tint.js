@@ -34,7 +34,7 @@ const CarbonTint = () => {
       }
     }
   `);
-  const { title, subtitle, features, image } = data.wpPage.sections.carbonTint;
+  const { title, subtitle, features, image } = data.wpPage.sections?.carbonTint;
 
   return (
     <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">

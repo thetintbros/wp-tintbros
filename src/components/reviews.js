@@ -45,7 +45,7 @@ const Reviews = () => {
     }
   `);
 
-  const { to, sectionTitle, customerReviews } = data.wpPage.sections.reviews;
+  const { to, sectionTitle, customerReviews } = data.wpPage.sections?.reviews;
 
   return (
     <section>

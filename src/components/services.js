@@ -44,7 +44,7 @@ const Services = () => {
     }
   `);
 
-  const { headlightTinting, vinylWrap } = data.wpPage.sections.moreServices;
+  const { headlightTinting, vinylWrap } = data.wpPage.sections?.moreServices;
   return (
     <>
       <section className="mx-auto mb-12">

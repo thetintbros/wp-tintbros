@@ -26,7 +26,12 @@ const CarTint = () => {
     }
   `);
 
-  const { to, title, subtitle, features } = data.wpPage.sections.automotiveTint;
+  const {
+    to,
+    title,
+    subtitle,
+    features,
+  } = data.wpPage.sections?.automotiveTint;
 
   return (
     <div id={to} className="bg-white">

@@ -36,7 +36,7 @@ const CallToAction = () => {
     subheadline,
     ctaButton,
     image,
-  } = data.wpPage.sections.callToAction;
+  } = data.wpPage.sections?.callToAction;
   return (
     <div className="relative mb-20">
       <div className="absolute inset-0 flex flex-col" aria-hidden="true">

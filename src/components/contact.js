@@ -34,7 +34,7 @@ const Contact = () => {
     address,
     phone,
     email,
-  } = data.wpPage.sections.contact;
+  } = data.wpPage.sections?.contact;
 
   return (
     <section>

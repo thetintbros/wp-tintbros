@@ -34,7 +34,12 @@ const CeramicTint = () => {
       }
     }
   `);
-  const { title, subtitle, features, image } = data.wpPage.sections.ceramicTint;
+  const {
+    title,
+    subtitle,
+    features,
+    image,
+  } = data.wpPage.sections?.ceramicTint;
 
   return (
     <div className="relative mt-12 sm:mt-16 lg:mt-24">

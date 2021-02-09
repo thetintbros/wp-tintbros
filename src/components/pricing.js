@@ -20,7 +20,7 @@ const Pricing = () => {
     }
   `);
 
-  const { to, title, heading, subheading } = data.wpPage.sections.pricing;
+  const { to, title, heading, subheading } = data.wpPage.sections?.pricing;
 
   return (
     <section id={to}>

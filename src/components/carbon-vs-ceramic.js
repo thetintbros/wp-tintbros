@@ -15,7 +15,7 @@ const CarbonVSCeramic = () => {
     }
   `);
 
-  const { title, subtitle } = data.wpPage.sections.carbonVsCeramic;
+  const { title, subtitle } = data.wpPage.sections?.carbonVsCeramic;
 
   return (
     <div className="relative">

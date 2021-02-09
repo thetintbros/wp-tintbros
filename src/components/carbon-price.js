@@ -40,7 +40,7 @@ const CarbonPrice = () => {
     fourDoors,
     features,
     ctaButton,
-  } = data.wpPage.sections.carbonPrice;
+  } = data.wpPage.sections?.carbonPrice;
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">

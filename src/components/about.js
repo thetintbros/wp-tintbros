@@ -26,7 +26,7 @@ const About = () => {
     }
   `);
 
-  const { to, description, image } = data.wpPage.sections.about;
+  const { to, description, image } = data.wpPage.sections?.about;
   return (
     <section>
       <div id={to} className="bg-white pt-8 lg:pt-24">

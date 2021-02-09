@@ -79,7 +79,7 @@ const Header = () => {
     }
   `);
 
-  const { items, phoneCta } = data?.wpPage?.sections?.menuItems;
+  const { items, phoneCta } = data.wpPage.sections?.menuItems;
   return (
     <>
       {/* This example requires Tailwind CSS v2.0+ */}

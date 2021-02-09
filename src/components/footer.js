@@ -28,7 +28,7 @@ const Footer = () => {
     }
   `);
 
-  const { items } = data.wpPage.sections.menuItems;
+  const { items } = data.wpPage.sections?.menuItems;
   const {
     facebookLink,
     instagramLink,

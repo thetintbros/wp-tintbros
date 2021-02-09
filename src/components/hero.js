@@ -39,7 +39,7 @@ const Hero = () => {
     bookBtn,
     learnBtn,
     image,
-  } = data.wpPage.sections.hero;
+  } = data.wpPage.sections?.hero;
 
   return (
     <section>
