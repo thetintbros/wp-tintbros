@@ -34,7 +34,7 @@ const Header = () => {
 
   const handleScroll = () => {
     if (scrolled === true) {
-      setActive(!active);
+      setActive(false);
     }
   };
 
@@ -79,11 +79,14 @@ const Header = () => {
     }
   `);
 
-  const { items, phoneCta } = data.wpPage.sections.menuItems;
+  const { items, phoneCta } = data?.wpPage?.sections?.menuItems;
   return (
     <>
       {/* This example requires Tailwind CSS v2.0+ */}
-      <nav className="bg-gray-900 shadow-xl fixed w-full z-20 top-0">
+      <nav
+        ref={menuNode}
+        className="bg-gray-900 shadow-xl fixed w-full z-20 top-0"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex">
@@ -144,6 +147,7 @@ const Header = () => {
               </div>
               <div className="flex-shrink-0 flex items-center">
                 <LinkScroll
+                  onClick={handleScroll}
                   activeClass="active"
                   to="Home"
                   spy
@@ -231,7 +235,6 @@ const Header = () => {
       Menu open: "block", Menu closed: "hidden"
       --> */}
         <div
-          ref={menuNode}
           className={`${active ? 'block' : 'hidden'} mobile-menu  md:hidden `}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
