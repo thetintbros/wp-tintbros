@@ -17,7 +17,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-wordpress-experimental`,
+      resolve: `gatsby-source-wordpress`,
       options: {
         // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
         url:
