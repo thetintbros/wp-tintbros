@@ -1,4 +1,21 @@
-# Gatsby Starter Tailwind
+## The Tint Bros
+
+A car tinting company in Aurora, Colorado.
+
+The website is built with GatsbyJS and Tailwind CSS for the frontend which is deployed through Gatsby Cloud and Vercel.
+Wordpress as a Headless CMS for the backend, which is hosted on DigitalOcean.
+
+The website has a Calendly integration for customers to easily schedule appointments for the services they want.
+
+**Demo:** https://thetintbros.com/
+
+&nbsp;
+
+![the-tint-bros-site](./src/images/tintbros.png)
+
+&nbsp;
+
+## Gatsby Starter Tailwind
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)
 
