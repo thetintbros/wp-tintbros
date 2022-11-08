@@ -7,7 +7,7 @@
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",
     "dotenv": "^8.2.0",
-    "gatsby": "2.25.1",
+    "gatsby": "^4.24.7",
     "gatsby-image": "^2.10.0",
     "gatsby-plugin-google-analytics": "^3.4.0",
     "gatsby-plugin-manifest": "2.8.0",
