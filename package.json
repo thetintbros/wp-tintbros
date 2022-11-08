@@ -16,7 +16,6 @@
     "gatsby-plugin-react-helmet": "3.7.0",
     "gatsby-plugin-sharp": "^2.13.3",
     "gatsby-plugin-wpgraphql-seo": "^1.1.2",
-    "gatsby-source-google-reviews": "^0.0.7",
     "gatsby-source-graphql": "^2.12.0",
     "gatsby-source-wordpress": "^4.0.1",
     "gatsby-source-wordpress-experimental": "^6.2.0",
